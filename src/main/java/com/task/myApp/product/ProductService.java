@@ -11,6 +11,7 @@ public class ProductService {
     @Resource
     private ProductRepository productRepository;
 
+
     public ProductDto addNewProduct(ProductDto productDto) {
         Product product = productMapper.toEntity(productDto);
         productRepository.save(product);
